@@ -11,10 +11,10 @@ class FontSwapCommand(sublime_plugin.ApplicationCommand):
     font_prefs = sublime.load_settings("FontSwap.sublime-settings")
 
     current_font = sublime_prefs.get("font_face")
-    if font_prefs.get("font_a")["font_face"] == current_font:
-      switch_to = font_prefs.get("font_a")
-    else:
-      switch_to = font_prefs.get("font_b")
+    switch_to = "font_b" if font_prefs.get("font_a")["font_face"] == current_font else "font_a"
 
-    for (key, val) in switch_to:
+    print("switching font options to " + switch_to)
+    switch_to = font_prefs.get(switch_to)
+
+    for key, val in switch_to.items():
       sublime_prefs.set(key, val)
