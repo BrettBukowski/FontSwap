@@ -1,0 +1,14 @@
+{
+  "font_a": {
+    "font_face": "Source Code Pro",
+    "font_options": [
+      "subpixel_antialias"
+    ],
+    "font_size": 11.0
+  },
+  "font_b": {
+    "font_face": "Inconsolata-g",
+    "font_options": [],
+    "font_size": 10.0
+  }
+}

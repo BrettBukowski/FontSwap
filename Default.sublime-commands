@@ -1,0 +1,20 @@
+[
+    {
+        "caption": "FontSwap: Swap",
+        "command": "font_swap"
+    },
+    {
+        "caption": "Preferences: FontSwap Settings – Default",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/FontSwap/FontSwap.sublime-settings"
+        }
+    },
+    {
+        "caption": "Preferences: FontSwap Settings – User",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/User/FontSwap.sublime-settings"
+        }
+    }
+]
